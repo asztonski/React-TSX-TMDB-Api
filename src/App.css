@@ -1,0 +1,108 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+
+/* General */
+
+:root {
+  --violet: #461E52;
+  --orange: #FFB845;
+  --white: #FAFAFA;
+}
+
+
+::-webkit-scrollbar {
+  background: var(--violet);
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+}
+
+
+
+body {
+  background-color: var(--violet);
+  padding: 0 15%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+}
+
+p {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: var(--orange);
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Chewy';
+  letter-spacing: 3.34px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Ephesis', cursive;
+  letter-spacing: 10px;
+  font-size: 3.25rem;
+  text-shadow: 2px 2px var(--white);
+  transform: rotate(10deg);
+  word-spacing: 10px;
+}
+
+/* Phones */
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 2.5%;    
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 1024px) {
+  body {
+    padding: 0 5%;    
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.15rem;
+  }
+}
+
+

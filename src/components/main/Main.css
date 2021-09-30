@@ -1,0 +1,126 @@
+.card__container {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    margin-top: 5%;
+    padding: 20px 0;
+    border: 2px solid;
+  }
+  
+  .buttonbox {
+    margin-top: 5%;
+  }
+  
+  .buttonbox > * {
+    margin-right: 30px;
+  }
+  
+  button {
+    background-color: var(--orange);
+    border: 4px solid;
+    border-color: var(--white);
+    padding: 10px 40px;
+    height: fit-content;
+    align-self: center;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--violet);
+    color: var(--orange);
+    border-color: var(--orange);
+    border: 4px solid;
+  }
+  
+  .card {
+    width: 25%;
+    margin: 1%;
+    border: 4px solid;
+    padding: 20px;
+    background-color: var(--violet);
+    transition: 0.36s ease;
+    border-radius: 10px;
+  }
+  
+  .card p {
+    overflow-y: auto;
+    height: 10em;
+    color: var(--white);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card .flex {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .card .flex p {
+    background: var(--orange);
+    border-radius: 100%;
+    border: 2px solid black;
+    padding: 5%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+  }
+  
+  h3 {
+    max-width: 50%;
+    text-align: left;
+    margin: 0;
+  }
+  
+  /* Phones */
+  
+  @media only screen and (max-width: 600px) {
+    .buttonbox {
+      padding: 0 1.5%;
+    }
+  
+    .buttonbox > * {
+      margin-right: 15px;
+    }
+  
+    .container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+    .card {
+      width: auto;
+    }
+  }
+  
+  /* Tablets */
+  
+  @media only screen and (max-width: 1024px) and (min-width: 600px) {
+    .buttonbox {
+      padding: 0 1%;
+    }
+  
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-width: 1024px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
